@@ -1,3 +1,13 @@
+/* xxl */
+/* ul */
+/* xl */
+/* lg */
+/* md */
+/* sm */
+/* xs */
+/* xx */
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,200,300,regular,500,600,700&display=swap);
 * {
   box-sizing: border-box;
 }
@@ -28,8 +38,6 @@ body {
   padding: 0px 15px;
   margin: 0 auto;
   box-sizing: content-box;
-
   font-size: 16px;
   color: #000000;
 }
-
