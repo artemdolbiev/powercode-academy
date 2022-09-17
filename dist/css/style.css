@@ -102,6 +102,41 @@ body {
   padding: 12px 21px;
   text-transform: uppercase;
 }
+.icon-facebook {
+  transition: color 0.6s;
+}
+.icon-facebook:hover {
+  color: #3b5998;
+}
+
+.icon-linkedin {
+  transition: color 0.6s;
+}
+.icon-linkedin:hover {
+  color: #0e76a8;
+}
+
+.icon-telegram {
+  transition: color 0.6s;
+}
+.icon-telegram:hover {
+  color: #0088cc;
+}
+
+.icon-youtube {
+  transition: color 0.6s;
+}
+.icon-youtube:hover {
+  color: red;
+}
+
+.icon-instagram {
+  transition: color 0.6s;
+}
+.icon-instagram:hover {
+  color: #E1306C;
+}
+
 .button {
   width: 40px;
   height: 40px;
@@ -393,6 +428,7 @@ body {
   border-radius: 10px;
   height: 455px;
   margin-top: 120px;
+  margin-bottom: 120px;
   background-color: #4FCC97;
 }
 
