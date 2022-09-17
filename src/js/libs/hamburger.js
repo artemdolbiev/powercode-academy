@@ -1,4 +1,3 @@
-
 export function menuInit() {
 	if (document.querySelector('.icon-menu')) {
 		document.addEventListener("click", function (e) {

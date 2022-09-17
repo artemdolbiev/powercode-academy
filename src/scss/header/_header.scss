@@ -1,6 +1,7 @@
 .header {
   height: 56px;
   margin-top: 22px;
+  margin-bottom: 52px;
 
   &__container {
     display: flex;
@@ -180,7 +181,7 @@
   align-items: right;
 }
 .menu-open .header__social {
-  margin-left: 0;
+  margin-right: 162px;
 }
 
 .header-navbar {
@@ -228,7 +229,7 @@
 
   &__img {
     width: 699px;
-    height: 537px;
+    height: 587px;
     // margin-right: 270px;
     margin: 0 auto;
   }
