@@ -1,9 +1,10 @@
-'use strict';
 
-const popupWindow = document.querySelector('.popup');
+const popup = (pPopup) => {
+
+const popupWindow = document.querySelector(pPopup);
 const overlay = document.querySelector('.overlay');
 const btnClocePopupWindow = document.querySelector('.close-popup');
-const btnsShowPopupWindow = document.querySelectorAll('.popup-link');
+const btnsShowPopupWindow = document.querySelectorAll('.show-popup');
 console.log(btnsShowPopupWindow);
 
 const showPopupWindow = function() {
@@ -30,3 +31,7 @@ document.addEventListener('keydown', function(e) {
     closePopupWindow();
   }
 })
+
+}
+
+export default popup;

@@ -1,2 +1,23 @@
 <footer class="footer">
+  <div class="footer__wrapper">
+      <p class="footer__text">© Powered by POWERCODE</p>
+      <div footer__arrow>
+          <button id="scrollToTopBtn">️
+               <img src="../img/footer/arrow_backward.svg" alt="">
+          </button>
+      </div>
+  </div>
 </footer>
+
+<script>
+  let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  let rootElement = document.documentElement;
+
+  function scrollToTop() {
+      rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth"
+      });
+  }
+  scrollToTopBtn.addEventListener("click", scrollToTop);
+</script>

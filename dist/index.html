@@ -99,7 +99,7 @@
           </a>
         </div>
         <div class="section-home__video home-video">
-          <a class="home-video__link" href="https://www.youtube.com/embed/am3riwYbG3s" target="_blank">
+          <a class="home-video__link video-link" href="#video">
             <span class="home-video__text">дивитись відео</span>
             <img class="home-video__img" src="img/home/home-video.svg" alt="video">
           </a>
@@ -138,7 +138,7 @@
           </label>
         </form>
         <div class="popup-submit__button">
-          <a href="" class="popup-submit__link popup-link">
+          <a href="#popup2" class="popup-submit__link popup-link2">
             <span class="popup-submit__text">Відправити</span>
           </a>
         </div>
@@ -151,67 +151,129 @@
   </div>
   <div class="overlay hidden"></div>
 </div>
-    <section class="section-сourses">
-  <h2 class="courses__title">наші курси</h2>
-  <div class="courses__block">
-      <p class="courses__text"><span>ON-line</span> навчання</p>
-      <div class="courses_tabs" id="courses_tabs">
-          <button class="courses__tabs_btn courses__tabs_active">Online</button>
-          <button class="courses__tabs_btn">Київ</button>
-          <button class="courses__tabs_btn">Запоріжжя</button>
+
+<div class="video hidden">
+  <div class="video__container">
+    <div class="button video__button">
+      <button class="popup-close close-video" type="button"><span></span></button>
+    </div>
+    <iframe id="video" class="video__youtube" width="1160" height="715" src="https://www.youtube.com/embed/am3riwYbG3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="video-overlay"></div>
+</div>
+
+<div id="popup2" class="popup2 hidden">
+  <div class="popup__container">
+    <div class="popup__top popup__top2">
+      <a class="popup__logo" href="#">
+        <img class="popup__img" src="img/logo.svg" alt="logo">
+      </a>
+      <div class="button">
+        <button class="popup-close close-popup2" type="button"><span></span></button>
       </div>
+    </div>
+    <div class="popup__about">
+      <div class="poup-thanks__bg">
+        <img class="popup-thanks__img" src="img/popup/popup-thanks-one.png" alt="popup-bg">
+      </div>
+      <div class="popup-thanks">
+        <h3 class="popup-thanks__title">Дякуємо за заявку!</h3>
+        <p class="popup-thanks__text">Скоро з вами зв'яжеться наш менеджер, чекайте на дзвінок</p>
+        <div class="popup-thanks__button">
+          <a href="" class="popup-thanks__link popup-link">
+            <span class="popup-thanks__text">Повернутися на головну</span>
+          </a>
+        </div>
+      </div>
+      <div class="poup-thanks__bg2">
+        <img class="popup-thanks__img2" src="img/popup/popup-thanks-two.png" alt="popup-bg">
+      </div>
+    </div>
+    </div>
   </div>
+  <div class="overlay hidden"></div>
+</div>
+    <section class="section-сourses">
+    <h2 class="courses__title">наші курси</h2>
+    <div class="courses__block">
+        <p class="courses__text"><span>ON-line</span> навчання</p>
+        <div class="courses_tabs" id="courses_tabs">
+            <a href="#" class="courses__tabs_btn courses__tabs_active">Online</a>
+            <a href="#" class="courses__tabs_btn">Київ</a>
+            <a href="#" class="courses__tabs_btn">Запоріжжя</a>
+        </div>
+    </div>
 
-  <div class="onLine" id="online_tabs">
-      <a class="onLine__block block1" style="background-image: url('img/courses/Group_1.png')" href="#">
-          <p class="onLine__text">31.01. | 12 уроків</p>
-          <p class="onLine__text">усього місць : 18</p>
-          <p class="onLine__title">{FRONT-END}</p>
-      </a>
+    <div class="onLine" id="online_tabs">
+        <a class="onLine__block block1" href="#">
+            <div>
+                <p class="onLine__text">31.01. | 12 уроків</p>
+                <p class="onLine__text">усього місць : 18</p>
+            </div>
+            <p class="onLine__title">{FRONT-END}</p>
+        </a>
 
-      <a class="onLine__block" style="background-image: url('img/courses/Group_2.png')" href="#">
-          <p class="onLine__text">31.01. | 12 уроків</p>
-          <p class="onLine__text">усього місць : 18</p>
-          <p class="onLine__title">{IT Project Management}</p>
-      </a>
+        <a class="onLine__block block2 onLine__block_active" href="#">
+            <div>
+            <p class="onLine__text">31.01. | 12 уроків</p>
+            <p class="onLine__text">усього місць : 18</p>
+                </div>
+            <p class="onLine__title">{IT Project Management}</p>
+        </a>
 
-      <a class="onLine__block" style="background-image: url('img/courses/Group_3.png')" href="#">
-          <p class="onLine__text">31.01. | 12 уроків</p>
-          <p class="onLine__text">усього місць : 18</p>
-          <p class="onLine__title">{UX/UI WEB-DESIGN}</p>
-      </a>
+        <a class="onLine__block block3" href="#">
+            <div>
+            <p class="onLine__text">31.01. | 12 уроків</p>
+            <p class="onLine__text">усього місць : 18</p>
+                </div>
+            <p class="onLine__title">{UX/UI <br>WEB-DESIGN}</p>
+        </a>
 
-      <a class="onLine__block" style="background-image: url('img/courses/Group_4.png')" href="#">
-          <p class="onLine__text">31.01. | 12 уроків</p>
-          <p class="onLine__text">усього місць : 18</p>
-          <p class="onLine__title">{FRONT-END ADVANCED}</p>
-      </a>
+        <a class="onLine__block block4" href="#">
+            <div>
+            <p class="onLine__text">31.01. | 12 уроків</p>
+            <p class="onLine__text">усього місць : 18</p>
+                </div>
+            <p class="onLine__title">{FRONT-END ADVANCED}</p>
+        </a>
 
-      <a class="onLine__block" style="background-image: url('img/courses/Group_5.png')" href="#">
-          <p class="onLine__text">31.01. | 12 уроків</p>
-          <p class="onLine__text">усього місць : 18</p>
-          <p class="onLine__title">{FRONT-END}</p>
-      </a>
+        <a class="onLine__block block1" href="#">
+            <div>
+            <p class="onLine__text">31.01. | 12 уроків</p>
+            <p class="onLine__text">усього місць : 18</p>
+                </div>
+            <p class="onLine__title">{FRONT-END}</p>
+        </a>
 
-      <a class="onLine__block" style="background-image: url('img/courses/Group_6.png')" href="#">
-          <p class="onLine__text">31.01. | 12 уроків</p>
-          <p class="onLine__text">усього місць : 18</p>
-          <p class="onLine__title">{IT Project Management}</p>
-      </a>
+        <a class="onLine__block block2" href="#">
+            <div>
+            <p class="onLine__text">31.01. | 12 уроків</p>
+            <p class="onLine__text">усього місць : 18</p>
+                </div>
+            <p class="onLine__title">{IT Project Management}</p>
+        </a>
 
-      <a class="onLine__block" style="background-image: url('img/courses/Group_7.png')" href="#">
-          <p class="onLine__text">31.01. | 12 уроків</p>
-          <p class="onLine__text">усього місць : 18</p>
-          <p class="onLine__title">{UX/UI WEB-DESIGN}</p>
-      </a>
+        <a class="onLine__block block3" href="#">
+            <div>
+            <p class="onLine__text">31.01. | 12 уроків</p>
+            <p class="onLine__text">усього місць : 18</p>
+                </div>
+            <p class="onLine__title">{UX/UI <br>WEB-DESIGN}</p>
+        </a>
 
-      <a class="onLine__block" style="background-image: url('img/courses/Group_8.png')" href="#">
-          <p class="onLine__text">31.01. | 12 уроків</p>
-          <p class="onLine__text">усього місць : 18</p>
-          <p class="onLine__title">{FRONT-END ADVANCED}</p>
-      </a>
-  </div>
+        <a class="onLine__block block4" href="#">
+            <div>
+            <p class="onLine__text">31.01. | 12 уроків</p>
+            <p class="onLine__text">усього місць : 18</p>
+                </div>
+            <p class="onLine__title">{FRONT-END ADVANCED}</p>
+        </a>
+    </div>
 </section>
+
+<script>
+    
+</script>
     <section class="section-offer">
   <div class="offer__block-one">
       <h1 class="offer__title">НЕ можеш обрати <span>свій курс?</span></h1>
@@ -344,7 +406,28 @@
 </section>
   </main>
   <footer class="footer">
+  <div class="footer__wrapper">
+      <p class="footer__text">© Powered by POWERCODE</p>
+      <div footer__arrow>
+          <button id="scrollToTopBtn">️
+               <img src="../img/footer/arrow_backward.svg" alt="">
+          </button>
+      </div>
+  </div>
 </footer>
+
+<script>
+  let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  let rootElement = document.documentElement;
+
+  function scrollToTop() {
+      rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth"
+      });
+  }
+  scrollToTopBtn.addEventListener("click", scrollToTop);
+</script>
 
   <script src="js/app.min.js"></script>
 </body>

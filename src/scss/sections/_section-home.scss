@@ -116,3 +116,43 @@
     margin-right: 20px;
   }
 }
+
+.video-overlay {
+  transition: all 0.7 ease 0s;
+
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0%;
+
+  width: 1380px;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  background-color: #fff;
+  z-index: 10;
+  &__container {
+    
+  }
+  // .video_v
+
+  &__youtube {
+  }
+}
+
+.close-video {
+  position: absolute;
+}
+

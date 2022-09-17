@@ -27,6 +27,8 @@
   }
 
   &__text {
+    margin-top: 20px;
+
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 500;
@@ -47,6 +49,8 @@
     &_btn {
       width: 120px;
       height: 40px;
+
+      padding: 12px;
 
       font-family: 'IBM Plex Mono';
       font-style: normal;
@@ -72,17 +76,26 @@
 }
 
 .onLine {
+  margin-top: 30px;
+
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+
 
   &__block {
     width: 330px;
     height: 250px;
     border-radius: 5px;
     background-color: #232F3C;
-    background-image: url('../img/courses/Group_1.png');
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &:hover {
       transition: all 0.5s ease;
@@ -94,8 +107,22 @@
     }
   }
 
+  .block1 {
+    background-image: url('../img/courses/Group1.svg');
+  }
+  .block2 {
+    background-image: url('../img/courses/Group2.svg');
+  }
+  .block3 {
+    background-image: url('../img/courses/Group3.svg');
+  }
+  .block4 {
+    background-image: url('../img/courses/Group4.svg');
+  }
+
   &__text {
-    padding-left: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
 
     font-family: 'IBM Plex Mono';
     font-style: normal;
@@ -103,10 +130,6 @@
     font-size: 14px;
     line-height: 18px;
     color: #FFFFFF;
-
-    &:first-child {
-      padding-top: 10px;
-    }
   }
 
   &__img {
@@ -121,7 +144,8 @@
   }
 
   &__title {
-    padding-left: 10px;
+    padding-left: 15px;
+    padding-bottom: 15px;
 
     font-family: 'Rubik';
     font-style: normal;
@@ -130,5 +154,31 @@
     line-height: 46px;
     text-transform: uppercase;
     color: #FFFFFF;
+  }
+}
+
+@media (max-width: 365px) {
+  .courses {
+    &__title {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 18px;
+      margin: 0 auto;
+      padding-top: 10px;
+    }
+
+    &__tabs {
+      max-width: 300px;
+
+      &_btn {
+        width: 94px;
+        height: 40px;
+        font-size: 12px;
+      }
+    }
+
   }
 }
