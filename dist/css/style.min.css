@@ -48,7 +48,6 @@ body {
   max-width: 1380px;
   padding: 0px 15px;
   margin: 0 auto;
-  box-sizing: content-box;
 }
 
 .header {
@@ -56,7 +55,7 @@ body {
   margin-top: 22px;
   margin-bottom: 52px;
 }
-.header__container {
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,6 +65,8 @@ body {
   width: 182px;
   height: 56px;
   z-index: 10;
+  display: flex;
+  align-items: left;
 }
 .header__social {
   position: relative;
@@ -172,11 +173,11 @@ body {
   background-color: #333333;
 }
 .icon-menu::before {
-  top: 13px;
+  top: 12px;
   width: 18px;
 }
 .icon-menu::after {
-  bottom: 13px;
+  bottom: 12px;
   width: 18px;
 }
 .icon-menu span {
@@ -215,18 +216,16 @@ body {
   margin-right: 162px;
 }
 
-.header-navbar {
-  flex: 1 1 auto;
-}
 .header-navbar__list {
   display: flex;
   flex-direction: column;
+  align-content: center;
   justify-content: center;
-  align-items: left;
   flex-wrap: wrap;
   position: fixed;
   top: -100%;
-  width: 1380px;
+  right: 0%;
+  width: 100%;
   margin: 0 auto;
   height: 100%;
   gap: 36px;
@@ -331,11 +330,9 @@ body {
   align-items: center;
   position: fixed;
   top: 0%;
-  width: 1380px;
+  left: 0;
+  width: 100%;
   height: 100%;
-  overflow: hidden;
-  overflow-y: hidden;
-  overflow-x: hidden;
   background-color: #fff;
   z-index: 10;
 }
@@ -345,9 +342,12 @@ body {
 
 .popup, .popup2 {
   padding-top: 22px;
+  opacity: 1;
+  transition: opacity 0.3s;
   position: fixed;
   top: 0%;
-  max-width: 1380px;
+  left: 0;
+  width: 100%;
   height: 100%;
   overflow: hidden;
   overflow-y: hidden;
@@ -458,13 +458,11 @@ body {
   text-transform: uppercase;
   padding: 21px 178px;
 }
-.hidden {
+.hidden-popup {
   display: none;
-  transition: all 0.7 ease 0s;
 }
 
 .overlay {
-  transition: all 0.7 ease 0s;
   width: 100%;
   height: 100%;
   background-color: #ffffff;
@@ -509,13 +507,6 @@ body {
 
 .popup__top2 {
   margin-bottom: 120px;
-}
-
-.section-courses {
-  max-width: 1380px;
-  padding: 0px 15px;
-  margin: 0 auto;
-  box-sizing: content-box;
 }
 
 .courses__title {
@@ -662,14 +653,9 @@ body {
   }
 }
 .section-offer {
-  max-width: 1380px;
-  padding: 0px 15px;
-  margin: 0 auto;
-  box-sizing: content-box;
   border-radius: 10px;
   height: 455px;
   margin-top: 120px;
-  margin-bottom: 120px;
   background-color: #4FCC97;
 }
 
@@ -720,10 +706,102 @@ body {
 }
 .offer__img1 {
   max-width: 638px;
-  height: 657px;
-  transform: translate(128%, -69%);
+  max-height: 657px;
+  transform: translate(135%, -67%);
 }
 
+@media (max-width: 1440px) {
+  .section-offer {
+    max-width: 1100px;
+  }
+  .offer__img1 {
+    transform: translate(114%, -67%);
+  }
+}
+@media (max-width: 1330px) {
+  .section-offer {
+    max-width: 1000px;
+    height: 355px;
+  }
+  .offer__block-one {
+    max-width: 665px;
+  }
+  .offer__title {
+    font-size: 52px;
+    line-height: 52px;
+  }
+  .offer__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .offer__img1 {
+    max-width: 438px;
+    max-height: 457px;
+    transform: translate(156%, -72%);
+  }
+}
+@media (max-width: 1200px) {
+  .section-offer {
+    max-width: 900px;
+    height: 300px;
+  }
+  .offer__block-one {
+    max-width: 565px;
+  }
+  .offer__title {
+    font-size: 44px;
+    line-height: 44px;
+  }
+  .offer__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .offer__img1 {
+    max-width: 365px;
+    max-height: 457px;
+    transform: translate(170%, -78%);
+  }
+}
+@media (max-width: 1000px) {
+  .section-offer {
+    max-width: 835px;
+  }
+  .offer__img1 {
+    max-width: 365px;
+    max-height: 457px;
+    transform: translate(145%, -78%);
+  }
+}
+@media (max-width: 900px) {
+  .offer__img1 {
+    display: none;
+  }
+}
+@media (max-width: 560px) {
+  .section-offer {
+    height: 370px;
+  }
+}
+@media (max-width: 380px) {
+  .section-offer {
+    height: 410px;
+  }
+  .offer__title {
+    margin: 0 auto;
+    max-width: 200px;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .offer__text {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+  }
+  .offer__btn {
+    margin: 0 auto;
+  }
+}
 .blocks_header {
   text-transform: uppercase;
   font-size: 64px;

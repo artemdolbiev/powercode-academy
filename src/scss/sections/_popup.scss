@@ -1,10 +1,14 @@
 .popup, .popup2 {
   padding-top: 22px;
 
+  opacity: 1;
+  transition: opacity 0.3s;
+
   position: fixed;
   top: 0%;
+  left: 0;
 
-  max-width: 1380px;
+  width: 100%;
   height: 100%;
   overflow: hidden;
   overflow-y: hidden;
@@ -201,14 +205,11 @@
   }
 }
 
-.hidden {
+.hidden-popup {
   display: none;
-  transition: all 0.7 ease 0s;
 }
 
 .overlay {
-  transition: all 0.7 ease 0s;
-
   width: 100%;
   height: 100%;
   background-color: #ffffff;

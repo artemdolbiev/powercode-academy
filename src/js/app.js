@@ -13,13 +13,13 @@ const popup = (popup, overlayHidden, closePopup, popupLink) => {
   console.log(btnsShowPopupWindow);
 
   const showPopupWindow = function() {
-    popupWindow.classList.remove('hidden');
-    overlay.classList.remove('hidden');
+    popupWindow.classList.remove('hidden-popup');
+    overlay.classList.remove('hidden-popup');
   }
 
   const closePopupWindow = function() {
-    popupWindow.classList.add('hidden');
-    overlay.classList.add('hidden');
+    popupWindow.classList.add('hidden-popup');
+    overlay.classList.add('hidden-popup');
   };
 
   for (let i = 0; i < btnsShowPopupWindow.length; i++) {
@@ -32,7 +32,7 @@ const popup = (popup, overlayHidden, closePopup, popupLink) => {
   document.addEventListener('keydown', function(e) {
     console.log(e);
 
-    if (e.key === 'Escape' && !popupWindow.classList.contains('hidden')) {
+    if (e.key === 'Escape' && !popupWindow.classList.contains('hidden-popup')) {
       closePopupWindow();
     }
   })

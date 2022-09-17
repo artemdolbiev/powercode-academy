@@ -1,16 +1,7 @@
 .section-offer {
-  max-width: 1380px;
-  padding: 0px 15px;
-  margin: 0 auto;
-  box-sizing: content-box;
-
   border-radius: 10px;
   height: 455px;
   margin-top: 120px;
-  margin-bottom: 120px;
-
-  //display: flex;
-  //justify-content: space-between;
 
   background-color: #4FCC97;
 }
@@ -72,8 +63,120 @@
 
   &__img1 {
     max-width: 638px;
-    height: 657px;
+    max-height: 657px;
 
-    transform: translate(128%, -69%);
+    transform: translate(135%, -67%);
+  }
+}
+
+@media(max-width: 1440px) {
+  .section-offer {
+    max-width: 1100px;
+  }
+  .offer {
+    &__img1 {
+      transform: translate(114%, -67%);
+    }
+  }
+}
+
+@media(max-width: 1330px) {
+  .section-offer {
+    max-width: 1000px;
+    height: 355px;
+  }
+  .offer {
+    &__block-one {
+      max-width: 665px;
+    }
+    &__title {
+      font-size: 52px;
+      line-height: 52px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__img1 {
+      max-width: 438px;
+      max-height: 457px;
+      transform: translate(156%, -72%);
+    }
+  }
+}
+
+@media(max-width: 1200px) {
+  .section-offer {
+    max-width: 900px;
+    height: 300px;
+  }
+  .offer {
+    &__block-one {
+      max-width: 565px;
+    }
+    &__title {
+      font-size: 44px;
+      line-height: 44px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &__img1 {
+      max-width: 365px;
+      max-height: 457px;
+      transform: translate(170%, -78%);
+    }
+  }
+}
+
+@media(max-width: 1000px) {
+  .section-offer {
+    max-width: 835px;
+  }
+  .offer {
+    &__img1 {
+      max-width: 365px;
+      max-height: 457px;
+      transform: translate(145%, -78%);
+    }
+  }
+}
+@media(max-width: 900px) {
+  .offer {
+    &__img1 {
+      display: none;
+    }
+  }
+}
+
+@media(max-width: 560px) {
+  .section-offer {
+    height: 370px;
+  }
+}
+
+@media(max-width: 380px) {
+  .section-offer {
+    height: 410px;
+  }
+  .offer {
+    &__title {
+      margin: 0 auto;
+      max-width: 200px;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+    }&__btn {
+       margin: 0 auto;
+     }
+
   }
 }
