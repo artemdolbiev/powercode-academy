@@ -572,6 +572,7 @@ body {
   }
 }
 .gallery {
+  width: 100%;
   margin: 40px 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -625,18 +626,16 @@ body {
     grid-column-start: 6;
   }
 }
-.partners {
-  padding: 40px 0;
-  text-align: center;
-}
-
 .partners__item {
   position: relative;
-  text-align: center;
+  padding: 80px 0;
 }
 
 .parners__item-names {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .contacts {
