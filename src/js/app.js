@@ -1,4 +1,6 @@
+
 // Hamburger menu
+
 import {menuInit, menuOpen, menuClose} from './libs/hamburger.js';
 
 menuInit();
@@ -42,33 +44,6 @@ popup('.popup', '.overlay', '.close-popup', '.popup-link');
 popup('.popup2', '.overlay', '.close-popup2', '.popup-link2');
 popup('.video', '.video-overlay', '.close-video', '.video-link');
 
-
-// tabs
-
-let coursesTabs = document.getElementById("courses_tabs");
-    let ctns = coursesTabs.getElementsByClassName("courses__tabs_btn");
-    for (let i = 0; i < ctns.length; i++) {
-        ctns[i].addEventListener("click", function() {
-            let current = document.getElementsByClassName("courses__tabs_active");
-            if (current.length > 0) {
-                current[0].className = current[0].className.replace(" courses__tabs_active", "");
-            }
-            this.className += " courses__tabs_active";
-        });
-    }
-
-    let onlineBlock = document.getElementById("online_tabs");
-    let obtn = onlineBlock.getElementsByClassName("onLine__block");
-    for (let i = 0; i < obtn.length; i++) {
-        obtn[i].addEventListener("click", function() {
-            let current = document.getElementsByClassName("onLine__block_active");
-            if (current.length > 0) {
-                current[0].className = current[0].className.replace(" onLine__block_active", "");
-            }
-            this.className += " onLine__block_active";
-        });
-    }
-
 // ScrollTop
 let scrollToTopBtn = document.getElementById("scrollToTopBtn");
 let rootElement = document.documentElement;
@@ -80,5 +55,32 @@ let rootElement = document.documentElement;
     });
   }
   scrollToTopBtn.addEventListener("click", scrollToTop);
+
+
+  // Вкладки
+
+const tabs = document.querySelectorAll('.contacts__tab');
+const tabContainer = document.querySelector('.contacts__tab-container');
+const tabContents = document.querySelectorAll('.contacts__content');
+
+tabContainer.addEventListener('click', function (e) {
+  const clickedButton = e.target.closest('.contacts__tab');
+  if (!clickedButton) return;
+
+  // Активная вкладка
+  tabs.forEach(tab => tab.classList.remove('contacts__tab--active'));
+  clickedButton.classList.add('contacts__tab--active');
+
+  // Активный контент
+  tabContents.forEach(content =>
+    content.classList.remove('contacts__content--active')
+  );
+  document
+    .querySelector(`.contacts__content--${clickedButton.dataset.tab}`)
+    .classList.add('contacts__content--active');
+});
+
+
+
 
 

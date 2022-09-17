@@ -258,7 +258,7 @@ body {
   display: flex;
   flex: 1 1 auto;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 .section-home__course {
   font-family: "IBM Plex Mono", sans-serif;
@@ -341,6 +341,7 @@ body {
 }
 
 .video__top {
+  margin-top: 22px;
   margin-bottom: 100px;
 }
 
@@ -558,14 +559,17 @@ body {
   text-align: center;
   text-transform: uppercase;
   border-radius: 10px;
+  border: 1px solid #000;
 }
 .courses__tabs_btn:hover {
   background: #EF5B63;
+  border: 1px solid #EF5B63;
   color: #FFFFFF;
   transition: all 0.5s ease;
 }
 .courses__tabs_active {
   background: #EF5B63;
+  border: 1px solid #EF5B63;
   color: #FFFFFF;
 }
 
@@ -574,7 +578,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 .onLine__block {
   width: 330px;
@@ -637,6 +641,38 @@ body {
   color: #FFFFFF;
 }
 
+@media (max-width: 1440px) {
+  .onLine {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 730px) {
+  .courses__block {
+    flex-wrap: wrap-reverse;
+  }
+  .onLine {
+    justify-content: start;
+  }
+}
+@media (max-width: 520px) {
+  .courses__title {
+    font-size: 58px;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 430px) {
+  .courses__title {
+    font-size: 48px;
+    letter-spacing: 0;
+  }
+  .courses__tabs {
+    max-width: 338px;
+  }
+  .courses__tabs_btn {
+    width: 94px;
+    height: 40px;
+  }
+}
 @media (max-width: 365px) {
   .courses__title {
     font-size: 24px;
@@ -657,15 +693,19 @@ body {
   }
 }
 .section-offer {
-  border-radius: 10px;
-  height: 455px;
   margin-top: 120px;
-  background-color: #4FCC97;
+  margin-bottom: 120px;
 }
 
+.offer {
+  border-radius: 10px;
+  height: 455px;
+  box-sizing: border-box;
+  background-color: #4FCC97;
+}
 .offer__block-one {
   max-width: 765px;
-  padding-left: 20px;
+  padding-left: 47px;
 }
 .offer__title {
   padding-top: 10px;
@@ -715,7 +755,7 @@ body {
 }
 
 @media (max-width: 1440px) {
-  .section-offer {
+  .offer {
     max-width: 1100px;
   }
   .offer__img1 {
@@ -723,7 +763,7 @@ body {
   }
 }
 @media (max-width: 1330px) {
-  .section-offer {
+  .offer {
     max-width: 1000px;
     height: 355px;
   }
@@ -745,7 +785,7 @@ body {
   }
 }
 @media (max-width: 1200px) {
-  .section-offer {
+  .offer {
     max-width: 900px;
     height: 300px;
   }
@@ -767,13 +807,13 @@ body {
   }
 }
 @media (max-width: 1000px) {
-  .section-offer {
+  .offer {
     max-width: 835px;
   }
   .offer__img1 {
     max-width: 365px;
     max-height: 457px;
-    transform: translate(145%, -78%);
+    transform: translate(150%, -78%);
   }
 }
 @media (max-width: 900px) {
@@ -782,12 +822,12 @@ body {
   }
 }
 @media (max-width: 560px) {
-  .section-offer {
+  .offer {
     height: 370px;
   }
 }
 @media (max-width: 380px) {
-  .section-offer {
+  .offer {
     height: 410px;
   }
   .offer__title {
@@ -985,6 +1025,10 @@ body {
     grid-column-start: 6;
   }
 }
+.partners {
+  margin-bottom: 120px;
+}
+
 .partners__item {
   position: relative;
   padding: 80px 0;
@@ -1007,19 +1051,182 @@ body {
   margin-right: 40px;
 }
 
-.contacts {
-  background-image: url("img/map.jpg");
+.contacts__container {
+  height: 494px;
+  background-image: url("../img/maps-bg.jpg");
+  border-radius: 10px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.contacts__card {
-  background-color: #232F3C;
-  box-sizing: border-box;
-  max-width: 509px;
-  max-height: 574px;
-  padding: 26px 36px;
-  margin-right: 40px;
-  top: 114px;
+.contacs__info {
+  position: relative;
 }
 
+.contacts__tab-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+
+.contacts__tab {
+  width: 120px;
+  height: 40px;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: 1px solid #ffffff;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.contacts__tab--active {
+  background-color: #EF5B63;
+  border: 1px solid #EF5B63;
+}
+
+.contacts__tab:hover {
+  background-color: #EF5B63;
+}
+
+.contacts__content {
+  display: none;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 166px;
+  margin-left: 46px;
+}
+
+.contacts__content--active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts__city {
+  position: relative;
+}
+.contacts__city::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/location.svg");
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: -32px;
+  z-index: 10;
+}
+
+.contacts__tel {
+  position: relative;
+}
+.contacts__tel::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/tell.svg");
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: -32px;
+  z-index: 10;
+}
+
+.contacts__mail {
+  position: relative;
+}
+.contacts__mail::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/email.svg");
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: -32px;
+  z-index: 10;
+}
+
+.contacs__forms {
+  width: 509px;
+  height: 574px;
+  background-color: #232F3C;
+  border-radius: 10px;
+  position: relative;
+  z-index: 10;
+}
+.contacs__img {
+  position: absolute;
+  top: -60px;
+  left: 60px;
+  z-index: 1;
+}
+.contacs__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 58px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 26px 110px 16px 36px;
+}
+.contacs__title span {
+  font-weight: 700;
+}
+.contacs__text {
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-bottom: 26px;
+}
+.contacs__form-name, .contacs__form-mail, .contacs__form-tell {
+  width: 437px;
+  height: 58px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  padding-left: 19px;
+  margin-left: 36px;
+}
+.contacs__form-name::placeholder, .contacs__form-mail::placeholder, .contacs__form-tell::placeholder {
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #333333;
+}
+.contacs-submit__button {
+  margin-top: 10px;
+  margin-left: 36px;
+  width: 437px;
+  background-color: #ef5b63;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.contacs-submit__link {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 21px 117px 21px 118px;
+}
 .footer {
   margin-top: 70px;
 }

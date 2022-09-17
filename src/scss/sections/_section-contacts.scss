@@ -1,12 +1,247 @@
 .contacts {
-	background-image: url('img/map.jpg');
-	&__card {
-		background-color: #232F3C;
-		box-sizing: border-box;
-		max-width: 509px;
-		max-height: 574px;
-		padding: 26px 36px;
-		margin-right: 40px;
-		top: 114px;
+
+		// .contacts__container
+
+		&__container {
+			height: 494px;
+			background-image: url('../img/maps-bg.jpg');
+			border-radius: 10px;
+			color: $color-white;
+
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		// .contacts__tabs-wrapper
+
+		&__tabs-wrapper {
+		}
+}
+
+
+.contacs__info {
+	position: relative;
+}
+
+.contacts__tab-container {
+  display: flex;
+  justify-content: center;
+	margin-bottom: 46px;
+}
+
+.contacts__tab {
+  width: 120px;
+	height: 40px;
+	font-family: 'IBM Plex Mono', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	color: $color-white;
+	text-transform: uppercase;
+	border-radius: 10px;
+	margin-right: 10px;
+	border: 1px solid $color-white;
+	background-color: inherit;
+	cursor: pointer;
+}
+
+
+.contacts__tab--active {
+  background-color: #EF5B63;
+	border: 1px solid #EF5B63;
+}
+
+.contacts__tab:hover {
+	background-color: #EF5B63;
+}
+
+
+
+.contacts__content {
+  display: none;
+	font-family: 'IBM Plex Mono', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	margin-bottom: 166px;
+	margin-left: 46px;
+}
+
+.contacts__content--active {
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contacts__city {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		background-image: url('../img/location.svg');
+		background-position: cover;
+		background-repeat: no-repeat;
+		width: 24px;
+		height: 24px;
+		top: 0;
+		left: -32px;
+		z-index: 10;
 	}
 }
+
+.contacts__tel {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		background-image: url('../img/tell.svg');
+		background-position: cover;
+		background-repeat: no-repeat;
+		width: 24px;
+		height: 24px;
+		top: 0;
+		left: -32px;
+		z-index: 10;
+	}
+
+}
+
+.contacts__mail {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		background-image: url('../img/email.svg');
+		background-position: cover;
+		background-repeat: no-repeat;
+		width: 24px;
+		height: 24px;
+		top: 0;
+		left: -32px;
+		z-index: 10;
+	}
+}
+
+.contacs {
+
+	// .contacs__forms
+
+	&__forms {
+		width: 509px;
+		height: 574px;
+		background-color: #232F3C;
+		border-radius: 10px;
+		position: relative;
+		z-index: 10;
+	}
+
+	// .contacs__img
+
+	&__img {
+		position: absolute;
+		top: -60px;
+		left: 60px;
+		z-index: 1;
+	}
+
+	// .contacs__title
+
+	&__title {
+		font-family: 'Rubik', sans-serif;
+		font-weight: 300;
+		font-size: 44px;
+		line-height: 58px;
+		letter-spacing: 4px;
+		text-transform: uppercase;
+		padding: 26px 110px 16px 36px;
+
+		span {
+			font-weight: 700;
+		}
+	}
+
+	// .contacs__text
+
+	&__text {
+		font-family: 'IBM Plex Mono', sans-serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		padding-left: 36px;
+		padding-right: 36px;
+		padding-bottom: 26px;
+	}
+
+	// .contacs__form
+
+	&__form {
+	}
+
+	// .contacs__form-name
+
+	&__form-name, &__form-mail, &__form-tell {
+    width: 437px;
+    height: 58px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    padding-left: 19px;
+		margin-left: 36px;
+
+    &::placeholder {
+      font-family: 'IBM Plex Mono', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #333333;
+    }
+  }
+
+	&__form-name {
+	}
+
+	// .contacs__form-mail
+
+	&__form-mail {
+	}
+
+	// .contacs__form-tell
+
+	&__form-tell {
+	}
+}
+.contacs-submit {
+
+	// .contacs-submit__button
+
+	&__button {
+		margin-top: 10px;
+		margin-left: 36px;
+		width: 437px;
+    background-color: #ef5b63;
+    color: $color-white;
+    border-radius: 10px;
+	}
+
+	// .contacs-submit__link
+
+	&__link {
+		font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 21px 117px 21px 118px;
+	}
+
+	// .contacs-submit__text
+
+	&__text {
+	}
+}
+.contacs-link {
+}
+
+

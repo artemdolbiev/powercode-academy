@@ -1,7 +1,5 @@
 .section-courses {
-
 }
-
 
 .courses {
 
@@ -58,9 +56,11 @@
       text-align: center;
       text-transform: uppercase;
       border-radius: 10px;
+      border: 1px solid #000;
 
       &:hover {
         background: #EF5B63;
+        border: 1px solid #EF5B63;
         color: #FFFFFF;
         transition: all 0.5s ease;
       }
@@ -68,6 +68,7 @@
 
     &_active {
       background: #EF5B63;
+      border: 1px solid #EF5B63;
       color: #FFFFFF;
     }
   }
@@ -79,7 +80,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 
 
   &__block {
@@ -108,12 +109,15 @@
   .block1 {
     background-image: url('../img/courses/Group1.svg');
   }
+
   .block2 {
     background-image: url('../img/courses/Group2.svg');
   }
+
   .block3 {
     background-image: url('../img/courses/Group3.svg');
   }
+
   .block4 {
     background-image: url('../img/courses/Group4.svg');
   }
@@ -152,6 +156,57 @@
     line-height: 46px;
     text-transform: uppercase;
     color: #FFFFFF;
+  }
+}
+
+@media (max-width: 1440px) {
+  .onLine {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 730px) {
+  .courses {
+    &__title {
+    }
+
+    &__block {
+      flex-wrap: wrap-reverse;
+    }
+
+    &__text {
+    }
+  }
+
+  .onLine {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 520px) {
+  .courses {
+    &__title {
+      font-size: 58px;
+      letter-spacing: 0;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .courses {
+    &__title {
+      font-size: 48px;
+      letter-spacing: 0;
+    }
+
+    &__tabs {
+      max-width: 338px;
+
+      &_btn {
+        width: 94px;
+        height: 40px;
+      }
+    }
   }
 }
 

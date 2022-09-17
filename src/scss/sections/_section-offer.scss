@@ -1,15 +1,17 @@
 .section-offer {
-  border-radius: 10px;
-  height: 455px;
   margin-top: 120px;
-
-  background-color: #4FCC97;
+  margin-bottom: 120px;
 }
 
 .offer {
+  border-radius: 10px;
+  height: 455px;
+  box-sizing: border-box;
+  background-color: #4FCC97;
+
   &__block-one {
     max-width: 765px;
-    padding-left: 20px;
+    padding-left: 47px;
   }
 
   &__title {
@@ -70,7 +72,7 @@
 }
 
 @media(max-width: 1440px) {
-  .section-offer {
+  .offer {
     max-width: 1100px;
   }
   .offer {
@@ -81,18 +83,20 @@
 }
 
 @media(max-width: 1330px) {
-  .section-offer {
+
+  .offer {
     max-width: 1000px;
     height: 355px;
-  }
-  .offer {
+
     &__block-one {
       max-width: 665px;
     }
+
     &__title {
       font-size: 52px;
       line-height: 52px;
     }
+
     &__text {
       font-size: 18px;
       line-height: 22px;
@@ -107,18 +111,20 @@
 }
 
 @media(max-width: 1200px) {
-  .section-offer {
+
+  .offer {
     max-width: 900px;
     height: 300px;
-  }
-  .offer {
+
     &__block-one {
       max-width: 565px;
     }
+
     &__title {
       font-size: 44px;
       line-height: 44px;
     }
+
     &__text {
       font-size: 14px;
       line-height: 18px;
@@ -133,17 +139,18 @@
 }
 
 @media(max-width: 1000px) {
-  .section-offer {
-    max-width: 835px;
-  }
+
   .offer {
+    max-width: 835px;
+
     &__img1 {
       max-width: 365px;
       max-height: 457px;
-      transform: translate(145%, -78%);
+      transform: translate(150%, -78%);
     }
   }
 }
+
 @media(max-width: 900px) {
   .offer {
     &__img1 {
@@ -153,16 +160,16 @@
 }
 
 @media(max-width: 560px) {
-  .section-offer {
+  .offer {
     height: 370px;
   }
 }
 
 @media(max-width: 380px) {
-  .section-offer {
-    height: 410px;
-  }
+
   .offer {
+    height: 410px;
+
     &__title {
       margin: 0 auto;
       max-width: 200px;
@@ -170,13 +177,16 @@
       line-height: 32px;
       text-align: center;
     }
+
     &__text {
       font-size: 18px;
       line-height: 26px;
       text-align: center;
-    }&__btn {
-       margin: 0 auto;
-     }
+    }
+
+    &__btn {
+      margin: 0 auto;
+    }
 
   }
 }
