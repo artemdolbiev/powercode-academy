@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="header">
-  <div class="header__container">
+  <div class="header__container container">
     <a class="header__logo" href="#">
       <img class="header__img" src="img/logo.svg" alt="logo">
     </a>
@@ -88,7 +88,7 @@
 </header>
   <main>
     <section class="section-home">
-  <div class="section-home__container">
+  <div class="section-home__container container">
     <div class="section-home__info">
       <span class="section-home__course">Курси від провідних IT спеціалістів</span>
       <h1 class="section-home__title">Powercode Academy</h1>
@@ -113,7 +113,7 @@
 
 </section>
     <div id="popup" class="popup hidden">
-  <div class="popup__container">
+  <div class="popup__container container">
     <div class="popup__top">
       <a class="popup__logo" href="#">
         <img class="popup__img" src="img/logo.svg" alt="logo">
@@ -153,7 +153,7 @@
 </div>
 
 <div class="video hidden">
-  <div class="video__container">
+  <div class="video__container container">
     <div class="button video__button">
       <button class="popup-close close-video" type="button"><span></span></button>
     </div>
@@ -163,7 +163,7 @@
 </div>
 
 <div id="popup2" class="popup2 hidden">
-  <div class="popup__container">
+  <div class="popup__container container">
     <div class="popup__top popup__top2">
       <a class="popup__logo" href="#">
         <img class="popup__img" src="img/logo.svg" alt="logo">
@@ -194,7 +194,8 @@
   <div class="overlay hidden"></div>
 </div>
     <section class="section-сourses">
-    <h2 class="courses__title">наші курси</h2>
+    <div class="courses__container container">
+        <h2 class="courses__title">наші курси</h2>
     <div class="courses__block">
         <p class="courses__text"><span>ON-line</span> навчання</p>
         <div class="courses_tabs" id="courses_tabs">
@@ -269,28 +270,28 @@
             <p class="onLine__title">{FRONT-END ADVANCED}</p>
         </a>
     </div>
-</section>
-
-<script>
+    </div>
     
-</script>
+</section>
     <section class="section-offer">
-  <div class="offer__block-one">
-      <h1 class="offer__title">НЕ можеш обрати <span>свій курс?</span></h1>
-      <p class="offer__text">Наші фахівці допоможуть із вибором курсу, який підходить саме Вам! Залиште контакти та
-          безкоштовно отримайте інформацію щодо курсу.</p>
+    <div class="section-home__container container">
+        <div class="offer__block-one">
+            <h1 class="offer__title">НЕ можеш обрати <span>свій курс?</span></h1>
+            <p class="offer__text">Наші фахівці допоможуть із вибором курсу, який підходить саме Вам! Залиште контакти табезкоштовно отримайте інформацію щодо курсу.</p>
         <div class="offer__btn">
             <a href="#popup" class="offer__link popup-link">
                 <span class="offer__tex">Записатися</span>
             </a>
         </button>
-  </div>
-  <div class="offer__block-two">
-      <img class="offer__img1" src="img/offer/group187.svg" alt="blob">
-  </div>
+        </div>
+        <div class="offer__block-two">
+            <img class="offer__img1" src="img/offer/group187.svg" alt="blob">
+        </div>
+        </div>
+    </div>
 </section>
     <section class="section-price">
-  <div class="blocks">
+  <div class="blocks container">
     <h2 class="blocks_header">
       Зарплати IT фахівців
     </h2>
@@ -358,76 +359,68 @@
 
 </section>
     <section class="section-contacts">
-	<img src="src\img\map.jpg" alt="Don't work">
-	<div class="contacts__tabs">
-		<p>КИЇВ</p>
-		<p>ЗАПОРІЖЖЯ</p>
-	</div>
-	<address>
-		<div class="contacts__item">
-			<p>м.Київ, вул. Верхній Вал, 24</p>
+	<div class="contacts__container container">
+		<img src="src\img\map.jpg" alt="Don't work">
+		<div class="contacts__tabs">
+			<p>КИЇВ</p>
+			<p>ЗАПОРІЖЖЯ</p>
 		</div>
-		<div class="contacts__item">
-			<a href="tel:+380731260072">+38 (073) 126 00 72</a>
+		<address>
+			<div class="contacts__item">
+				<p>м.Київ, вул. Верхній Вал, 24</p>
+			</div>
+			<div class="contacts__item">
+				<a href="tel:+380731260072">+38 (073) 126 00 72</a>
+			</div>
+			<div class="contacts__item">
+				<a href="mailto:powercodeacademy@gmail.com">powercodeacademy@gmail.com</a>
+			</div>
+		</address>
+		<div class="contacts__social">
+			<div class="contacts__social-item">
+				<a href=""></a>
+			</div>
+			<div class="contacts__social-item">
+				<a href=""></a>
+			</div>
+			<div class="contacts__social-item">
+				<a href=""></a>
+			</div>
+			<div class="contacts__social-item">
+				<a href=""></a>
+			</div>
+			<div class="contacts__social-item">
+				<a href=""></a>
+			</div>
 		</div>
-		<div class="contacts__item">
-			<a href="mailto:powercodeacademy@gmail.com">powercodeacademy@gmail.com</a>
+		<div class="contacts__card">
+			<div class="contacts__cards-title">
+				<h2>Залишилися <span>Питання?</span></h2>
+				<p>Заповни форму і наш спеціаліст передзвонить тобі, щоб розповісти про деталі курсу і відповісти на питання, що тебе цікавлять.</p>
+			</div>
+			<form action="" class="contacts__form">
+				<input type="text" placeholder="ІМ'Я" required>
+				<input type="email" placeholder="E-MAIL" required>
+				<input type="tel" placeholder="ТЕЛЕФОН" required>
+				<button type="submit">ВІДПРАВИТИ ЗАЯВКУ</button>
+			</form>
 		</div>
-	</address>
-	<div class="contacts__social">
-		<div class="contacts__social-item">
-			<a href=""></a>
-		</div>
-		<div class="contacts__social-item">
-			<a href=""></a>
-		</div>
-		<div class="contacts__social-item">
-			<a href=""></a>
-		</div>
-		<div class="contacts__social-item">
-			<a href=""></a>
-		</div>
-		<div class="contacts__social-item">
-			<a href=""></a>
-		</div>
-	</div>
-	<div class="contacts__card">
-		<div class="contacts__cards-title">
-			<h2>Залишилися <span>Питання?</span></h2>
-			<p>Заповни форму і наш спеціаліст передзвонить тобі, щоб розповісти про деталі курсу і відповісти на питання, що тебе цікавлять.</p>
-		</div>
-		<form action="" class="contacts__form">
-			<input type="text" placeholder="ІМ'Я" required>
-			<input type="email" placeholder="E-MAIL" required>
-			<input type="tel" placeholder="ТЕЛЕФОН" required>
-			<button type="submit">ВІДПРАВИТИ ЗАЯВКУ</button>
-		</form>
 	</div>
 </section>
   </main>
   <footer class="footer">
-  <div class="footer__wrapper">
+  <div class="footer__container container">
+    <div class="footer__wrapper">
       <p class="footer__text">© Powered by POWERCODE</p>
       <div footer__arrow>
           <button id="scrollToTopBtn">️
-               <img src="../img/footer/arrow_backward.svg" alt="">
+              <img src="../img/footer/arrow_backward.svg" alt="">
           </button>
       </div>
+    </div>
   </div>
 </footer>
 
-<script>
-  let scrollToTopBtn = document.getElementById("scrollToTopBtn");
-  let rootElement = document.documentElement;
-
-  function scrollToTop() {
-      rootElement.scrollTo({
-          top: 0,
-          behavior: "smooth"
-      });
-  }
-  scrollToTopBtn.addEventListener("click", scrollToTop);
-</script>
 
   <script src="js/app.min.js"></script>
 </body>

@@ -1,15 +1,15 @@
 .footer {
   margin-top: 70px;
 
-  position: absolute;
-  width: 1380px;
-  height: 100px;
-  mix-blend-mode: normal;
-  border-radius: 20px;
-
-  background: #F5F6F9;
+  
 
   &__wrapper {
+    position: absolute;
+    mix-blend-mode: normal;
+    border-radius: 20px;
+    background: #F5F6F9;
+    width: 1380px;
+    height: 100px;
     padding: 30px 30px;
     display: flex;
     justify-content: space-between;

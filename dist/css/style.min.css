@@ -7,9 +7,13 @@
 /* xs */
 /* xx */
 @import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700&display=swap);
-@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,200,300,regular,500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,regular,500,600,700&display=swap);
 * {
   box-sizing: border-box;
+}
+
+html {
+  width: 100%;
 }
 
 a {
@@ -34,12 +38,17 @@ p {
 }
 
 body {
+  width: 100%;
+  font-family: "";
+  font-size: 16px;
+  color: #232f3c;
+}
+
+.container {
   max-width: 1380px;
   padding: 0px 15px;
   margin: 0 auto;
   box-sizing: content-box;
-  font-size: 16px;
-  color: #232f3c;
 }
 
 .header {
@@ -103,35 +112,35 @@ body {
   text-transform: uppercase;
 }
 .icon-facebook {
-  transition: color 0.6s;
+  transition: color 0.2s;
 }
 .icon-facebook:hover {
   color: #3b5998;
 }
 
 .icon-linkedin {
-  transition: color 0.6s;
+  transition: color 0.2s;
 }
 .icon-linkedin:hover {
   color: #0e76a8;
 }
 
 .icon-telegram {
-  transition: color 0.6s;
+  transition: color 0.2s;
 }
 .icon-telegram:hover {
   color: #0088cc;
 }
 
 .icon-youtube {
-  transition: color 0.6s;
+  transition: color 0.2s;
 }
 .icon-youtube:hover {
   color: red;
 }
 
 .icon-instagram {
-  transition: color 0.6s;
+  transition: color 0.2s;
 }
 .icon-instagram:hover {
   color: #E1306C;
@@ -854,14 +863,14 @@ body {
 
 .footer {
   margin-top: 70px;
+}
+.footer__wrapper {
   position: absolute;
-  width: 1380px;
-  height: 100px;
   mix-blend-mode: normal;
   border-radius: 20px;
   background: #F5F6F9;
-}
-.footer__wrapper {
+  width: 1380px;
+  height: 100px;
   padding: 30px 30px;
   display: flex;
   justify-content: space-between;

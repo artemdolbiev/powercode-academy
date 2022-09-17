@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -24,12 +28,15 @@ p {
 }
 
 body {
-  max-width: 1380px;
-  padding: 0px 15px;
-  margin: 0 auto;
-  box-sizing: content-box;
-
+  width: 100%;
+  font-family: '';
   font-size: 16px;
   color: #232f3c;
 }
 
+.container {
+  max-width: 1380px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
