@@ -51,7 +51,7 @@
         <a href="tel:38 (099) 705 14 18" class="header__phone">+38 (099) 705 14 18</a>
       </div>
       <div class="header-reg__button">
-        <a href="" class="header-reg__link popup-link">
+        <a href="#popup" class="header-reg__link popup-link">
           <span class="header-reg__text">Записатися</span>
         </a>
       </div>
@@ -94,7 +94,7 @@
       <h1 class="section-home__title">Powercode Academy</h1>
       <div class="section-home__buttons">
         <div class="section-home__button">
-          <a href="" class="section-home__link popup-link">
+          <a href="#popup" class="section-home__link popup-link">
             <span class="section-home__text">Записатися</span>
           </a>
         </div>
@@ -112,7 +112,44 @@
   </div>
 
 </section>
-    <div class="popup">
+    <div id="popup" class="popup hidden">
+  <div class="popup__container">
+    <div class="popup__top">
+      <a class="popup__logo" href="#">
+        <img class="popup__img" src="img/logo.svg" alt="logo">
+      </a>
+      <div class="button">
+        <button class="popup-close close-popup" type="button"><span></span></button>
+      </div>
+    </div>
+    <div class="popup__about">
+      <div class="popup__forms">
+        <h3 class="popup__title">Залишити <span>заявку</span></h3>
+        <p class="popup__text">Заповни форму і наш спеціаліст передзвонить тобі, щоб розповісти про деталі курсу і відповісти на питання, що тебе цікавлять.</p>
+        <form class="popup__form">
+          <label>
+            <input class="popup__form-name" type="text" placeholder="Ім’я">
+          </label>
+          <label>
+            <input class="popup__form-mail" type="email" placeholder="e-mail">
+          </label>
+          <label>
+            <input class="popup__form-tell" type="tel" placeholder="телефон">
+          </label>
+        </form>
+        <div class="popup-submit__button">
+          <a href="" class="popup-submit__link popup-link">
+            <span class="popup-submit__text">Відправити</span>
+          </a>
+        </div>
+      </div>
+      <div class="poup__bg">
+        <img class="popup__img" src="img/popup/popup-bg.png" alt="popup-bg">
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="overlay hidden"></div>
 </div>
     <section class="section-сourses">
   <h2 class="courses__title">наші курси</h2>
@@ -181,7 +218,7 @@
       <p class="offer__text">Наші фахівці допоможуть із вибором курсу, який підходить саме Вам! Залиште контакти та
           безкоштовно отримайте інформацію щодо курсу.</p>
         <div class="offer__btn">
-            <a href="" class="offer__link popup-link">
+            <a href="#popup" class="offer__link popup-link">
                 <span class="offer__tex">Записатися</span>
             </a>
         </button>

@@ -1,2 +1,39 @@
-<div class="popup">
+<div id="popup" class="popup hidden">
+  <div class="popup__container">
+    <div class="popup__top">
+      <a class="popup__logo" href="#">
+        <img class="popup__img" src="img/logo.svg" alt="logo">
+      </a>
+      <div class="button">
+        <button class="popup-close close-popup" type="button"><span></span></button>
+      </div>
+    </div>
+    <div class="popup__about">
+      <div class="popup__forms">
+        <h3 class="popup__title">Залишити <span>заявку</span></h3>
+        <p class="popup__text">Заповни форму і наш спеціаліст передзвонить тобі, щоб розповісти про деталі курсу і відповісти на питання, що тебе цікавлять.</p>
+        <form class="popup__form">
+          <label>
+            <input class="popup__form-name" type="text" placeholder="Ім’я">
+          </label>
+          <label>
+            <input class="popup__form-mail" type="email" placeholder="e-mail">
+          </label>
+          <label>
+            <input class="popup__form-tell" type="tel" placeholder="телефон">
+          </label>
+        </form>
+        <div class="popup-submit__button">
+          <a href="" class="popup-submit__link popup-link">
+            <span class="popup-submit__text">Відправити</span>
+          </a>
+        </div>
+      </div>
+      <div class="poup__bg">
+        <img class="popup__img" src="img/popup/popup-bg.png" alt="popup-bg">
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="overlay hidden"></div>
 </div>
