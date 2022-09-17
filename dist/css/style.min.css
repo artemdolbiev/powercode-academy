@@ -344,6 +344,7 @@ body {
   height: 250px;
   border-radius: 5px;
   background-color: #232F3C;
+  background-image: url("../img/courses/Group_1.png");
 }
 .onLine__block:hover {
   transition: all 0.5s ease;
@@ -446,6 +447,130 @@ body {
   transform: translate(131%, -67%);
 }
 
+.blocks_header {
+  text-transform: uppercase;
+  font-size: 64px;
+}
+.blocks_main {
+  display: flex;
+  font-family: "Rubik", sans-serif;
+}
+.blocks_main .block {
+  width: 450px;
+  height: 420px;
+  position: relative;
+  border-radius: 5%;
+  overflow: hidden;
+}
+.blocks_main .block_junior {
+  border: 2px solid #4FCC97;
+}
+.blocks_main .block_middle {
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 2px solid #55CBDC;
+}
+.blocks_main .block_senior {
+  border: 2px solid #EF5B63;
+}
+.blocks_main .block_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.blocks_main .block_text {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 20px 0 0 20px;
+}
+.blocks_main .block_text .head_junior {
+  color: #4FCC97;
+}
+.blocks_main .block_text .head_middle {
+  color: #55CBDC;
+}
+.blocks_main .block_text .head_senior {
+  color: #EF5B63;
+}
+.blocks_main .block_text-head {
+  text-transform: uppercase;
+  display: block;
+  font-size: 56px;
+  font-weight: bold;
+}
+.blocks_main .block_text-subhead {
+  text-transform: uppercase;
+  display: block;
+  font-size: 20px;
+}
+.blocks_main .block_text-bottom {
+  font-family: "IBM Plex Mono", monospace;
+}
+.blocks_main .block_text-bottom_sup {
+  font-size: 20px;
+  display: block;
+}
+.blocks_main .block_text-bottom_sub {
+  font-size: 22px;
+  display: block;
+}
+.blocks_main .block_text-price {
+  font-size: 46px;
+  font-weight: bold;
+}
+.blocks_main .block_text-price {
+  display: block;
+}
+
+@media only screen and (max-width: 350px) {
+  .blocks_header {
+    font-size: 24px;
+    text-align: center;
+  }
+  .blocks_main {
+    flex-direction: column;
+  }
+  .blocks_main .block {
+    width: 332px;
+    height: 270px;
+  }
+  .blocks_main .block_middle {
+    margin: 10px 0 10px 0;
+  }
+  .blocks_main .block_img {
+    height: 270px;
+  }
+  .blocks_main .block_text-head {
+    font-size: 46px;
+  }
+  .blocks_main .block_text-subhead {
+    font-size: 16px;
+  }
+  .blocks_main .block_text-bottom_sup {
+    font-size: 18px;
+  }
+  .blocks_main .block_text-price {
+    font-size: 36px;
+  }
+  .blocks_main .block_text-bottom_sub {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .blocks_header {
+    font-size: 44px;
+    text-align: center;
+  }
+  .blocks_main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blocks_main .block_middle {
+    margin: 10px 0 10px 0;
+  }
+}
 .contacts {
   background-image: url("img/map.jpg");
 }
