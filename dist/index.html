@@ -4,38 +4,259 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.png" type="image/svg">
+  <link rel="shortcut icon" href="img/favicon.svg" type="image/svg">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Powercode Academy</title>
 </head>
 <body>
   <header class="header">
-
+  <div class="header__container">
+    <a class="header__logo" href="#">
+      <img class="header__img" src="img/logo.svg" alt="logo">
+    </a>
+    <div class="header__social">
+      <a class="header__link" href="#">
+        <img class="header__icon" src="img/linkedin.svg" alt="linkedin">
+      </a>
+      <a class="header__link" href="#">
+        <img class="header__icon" src="img/facebook.svg" alt="facebook">
+      </a>
+      <a class="header__link" href="#">
+        <img class="header__icon" src="img/youtube.svg" alt="youtube">
+      </a>
+      <a class="header__linkn" href="#">
+        <img class="header__icon" src="img/telegram.svg" alt="telegram">
+      </a>
+      <a class="header__link" href="#">
+        <img class="header__icon" src="img/instagram.svg" alt="instagram">
+      </a>
+    </div>
+    <div class="header-info__item">
+      <div class="header__item">
+        <a href="tel:38 (073) 126 00 72" class="header__phone">+38 (073) 126 00 72</a>
+        <a href="tel:38 (099) 705 14 18" class="header__phone">+38 (099) 705 14 18</a>
+      </div>
+      <div class="header-reg__button">
+        <a href="" class="header-reg__link popup-link">
+          <span class="header-reg__text">Записатися</span>
+        </a>
+      </div>
+      <div class="button">
+        <button class="button__icon icon-menu" type="button"><span></span></button>
+      </div>
+    </div>
+  </div>
+  <nav class="header-navbar">
+    <ul class="header-navbar__list">
+      <li class="header-navbar__item">
+        <a class="header-navbar__link" href="#">про нас</a>
+      </li>
+      <li class="header-navbar__item">
+        <a class="header-navbar__link" href="#">київ</a>
+      </li>
+      <li class="header-navbar__item">
+        <a class="header-navbar__link" href="#">запоріжжя</a>
+      </li>
+      <li class="header-navbar__item">
+        <a class="header-navbar__link" href="#"><span class="header-navbar__text">on-line курси</span></a>
+      </li>
+      <li class="header-navbar__item">
+        <a class="header-navbar__link" href="#">безкоштовні уроки</a>
+      </li>
+      <li class="header-navbar__item">
+        <a class="header-navbar__link" href="#">Вакансії</a>
+      </li>
+      <li class="header-navbar__item">
+        <img class="header-navbar__img" src="img/header-bg-green.png" alt="header-bg-green">
+      </li>
+    </ul>
+  </nav>
 </header>
   <main>
-    <section class="section-1">
+    <section class="section-home">
+  <div class="section-home__container">
+    <div class="section-home__info">
+      <span class="section-home__course">Курси від провідних IT спеціалістів</span>
+      <h1 class="section-home__title">Powercode Academy</h1>
+      <div class="section-home__buttons">
+        <div class="section-home__button">
+          <a href="" class="section-home__link popup-link">
+            <span class="section-home__text">Записатися</span>
+          </a>
+        </div>
+        <div class="section-home__video home-video">
+          <a class="home-video__link" href="https://www.youtube.com/embed/am3riwYbG3s" target="_blank">
+            <span class="home-video__text">дивитись відео</span>
+            <img class="home-video__img" src="img/home-video.svg" alt="video">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="section-home__bg">
+      <img class="section-home__img" src="img/home-bg-blue.png" alt="">
+    </div>
+  </div>
 
 </section>
-    <section class="section-2">
+    <div class="popup">
+</div>
+    <section class="section-сourses">
+  <h2 class="courses__title">наші курси</h2>
+  <div class="courses__block">
+      <p class="courses__text"><span>ON-line</span> навчання</p>
+      <div class="courses_tabs" id="courses_tabs">
+          <button class="courses__tabs_btn courses__tabs_active">Online</button>
+          <button class="courses__tabs_btn">Київ</button>
+          <button class="courses__tabs_btn">Запоріжжя</button>
+      </div>
+  </div>
 
-</section>
-    <section class="section-3">
+  <div class="onLine" id="online_tabs">
+      <a class="onLine__block block1" style="background-image: url('img/courses/Group_1.png')" href="#">
+          <p class="onLine__text">31.01. | 12 уроків</p>
+          <p class="onLine__text">усього місць : 18</p>
+          <p class="onLine__title">{FRONT-END}</p>
+      </a>
 
+      <a class="onLine__block" style="background-image: url('img/courses/Group_2.png')" href="#">
+          <p class="onLine__text">31.01. | 12 уроків</p>
+          <p class="onLine__text">усього місць : 18</p>
+          <p class="onLine__title">{IT Project Management}</p>
+      </a>
+
+      <a class="onLine__block" style="background-image: url('img/courses/Group_3.png')" href="#">
+          <p class="onLine__text">31.01. | 12 уроків</p>
+          <p class="onLine__text">усього місць : 18</p>
+          <p class="onLine__title">{UX/UI WEB-DESIGN}</p>
+      </a>
+
+      <a class="onLine__block" style="background-image: url('img/courses/Group_4.png')" href="#">
+          <p class="onLine__text">31.01. | 12 уроків</p>
+          <p class="onLine__text">усього місць : 18</p>
+          <p class="onLine__title">{FRONT-END ADVANCED}</p>
+      </a>
+
+      <a class="onLine__block" style="background-image: url('img/courses/Group_5.png')" href="#">
+          <p class="onLine__text">31.01. | 12 уроків</p>
+          <p class="onLine__text">усього місць : 18</p>
+          <p class="onLine__title">{FRONT-END}</p>
+      </a>
+
+      <a class="onLine__block" style="background-image: url('img/courses/Group_6.png')" href="#">
+          <p class="onLine__text">31.01. | 12 уроків</p>
+          <p class="onLine__text">усього місць : 18</p>
+          <p class="onLine__title">{IT Project Management}</p>
+      </a>
+
+      <a class="onLine__block" style="background-image: url('img/courses/Group_7.png')" href="#">
+          <p class="onLine__text">31.01. | 12 уроків</p>
+          <p class="onLine__text">усього місць : 18</p>
+          <p class="onLine__title">{UX/UI WEB-DESIGN}</p>
+      </a>
+
+      <a class="onLine__block" style="background-image: url('img/courses/Group_8.png')" href="#">
+          <p class="onLine__text">31.01. | 12 уроків</p>
+          <p class="onLine__text">усього місць : 18</p>
+          <p class="onLine__title">{FRONT-END ADVANCED}</p>
+      </a>
+  </div>
 </section>
-    <section class="section-4">
+    <section class="section-offer">
+  <div class="offer__block-one">
+      <h1 class="offer__title">НЕ можеш обрати <span>свій курс?</span></h1>
+      <p class="offer__text">Наші фахівці допоможуть із вибором курсу, який підходить саме Вам! Залиште контакти та
+          безкоштовно отримайте інформацію щодо курсу.</p>
+        <div class="offer__btn">
+            <a href="" class="offer__link popup-link">
+                <span class="offer__tex">Записатися</span>
+            </a>
+        </button>
+  </div>
+  <div class="offer__block-two">
+      <img class="offer__img1" src="img/offer/group187.svg" alt="blob">
+  </div>
+</section>
+    <section class="section-price">
+  <div class="blocks">
+    <h2 class="blocks_header">
+      Зарплати IT фахівців
+    </h2>
+    <div class="blocks_main">
+      <div class="block block_junior">
+        <div class="block_text">
+          <div>
+            <span class="block_text-head head_junior">junior</span>
+            <span class="block_text-subhead">від <strong> 6 </strong>місяців досвіду</span>
+          </div>
+          
+          <div class="block_text-bottom">
+            <span class="block_text-bottom_sup">дохід від</span>
+            <span class="block_text-price">$ 400 </span>
+            <span class="block_text-bottom_sub">в місяць</span>
+          </div>
+        </div>
+        <img src="../img/junior.png" class="block_img" alt="junior">
+      </div>
   
+      <div class="block block_middle">
+        <div class="block_text">
+          <div>
+            <span class="block_text-head head_middle">middle</span>
+            <span class="block_text-subhead">від <strong>2</strong> років досвіду</span>
+          </div>
+          
+          <div class="block_text-bottom">
+            <span class="block_text-bottom_sup">дохід від</span>
+            <span class="block_text-price">$ 1100 </span>
+            <span class="block_text-bottom_sub">в місяць</span>
+          </div>
+        </div>
+        <img src="../img/middle.png" class="block_img" alt="middle">
+      </div>
+  
+      <div class="block block_senior">
+        <div class="block_text">
+          <div>
+            <span class="block_text-head head_senior">senior</span>
+            <span class="block_text-subhead">від <strong>4</strong> років досвіду</span>
+          </div>
+          
+          <div class="block_text-bottom">
+            <span class="block_text-bottom_sup">дохід від</span>
+            <span class="block_text-price">$ 2400 </span>
+            <span class="block_text-bottom_sub">в місяць</span>
+          </div>
+        </div>
+        <img src="../img/senior.png" class="block_img" alt="senior">
+      </div>
+    </div>
+
+  </div>
 </section>
     <section class="section-5">
 
 </section>
 
 
-    <section class="section-6">
-  
+    <section class="gallery">
+	<div class="gallery__item gallery__item-big item-1"><img src="../img/gallery/gallery__item-1.jpg"></div>
+	<div class="gallery__item item-2"><img src="../img/gallery/gallery__item-2.jpg"></div>
+	<div class="gallery__item item-3"><img src="../img/gallery/gallery__item-3.jpg"></div>
+	<div class="gallery__item item-4"><img src="../img/gallery/gallery__item-4.jpg"></div>
+	<div class="gallery__item gallery__item-long item-5"><img src="../img/gallery/gallery__item-5.jpg"></div>
+	<div class="gallery__item item-6"><img src="../img/gallery/gallery__item-6.jpg"></div>
+	<div class="gallery__item gallery__item-big item-7"><img src="../img/gallery/gallery__item-7.jpg"></div>
+	<div class="gallery__item gallery__item-long item-8"><img src="../img/gallery/gallery__item-8.jpg"></div>
+	<div class="gallery__item item-9"><img src="../img/gallery/gallery__item-9.jpg"></div>
+	<div class="gallery__item item-10"><img src="../img/gallery/gallery__item-10.jpg"></div>
 </section>
-    <section class="section-8">
+    <section class="partners">
+	<div class="partners__item">
+		<div class="parners__item-names"><img  src="../img/partners/background.png" alt="Our partners"></div>
+		<div class="parners__item-names"><img  src="../img/partners/our_partners.png" alt="Partners name's"></div>
+	</div>
 </section>
-    <section class="contacts">
+    <section class="section-contacts">
 	<img src="src\img\map.jpg" alt="Don't work">
 	<div class="contacts__tabs">
 		<p>КИЇВ</p>

@@ -1,0 +1,12 @@
+.contacts {
+	background-image: url('img/map.jpg');
+	&__card {
+		background-color: #232F3C;
+		box-sizing: border-box;
+		max-width: 509px;
+		max-height: 574px;
+		padding: 26px 36px;
+		margin-right: 40px;
+		top: 114px;
+	}
+}

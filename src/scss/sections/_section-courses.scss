@@ -1,0 +1,134 @@
+.section-courses {
+  max-width: 1380px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.courses {
+
+  &__title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 88px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #232F3C;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 48px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    span {
+      color: #4FCC97;
+    }
+  }
+
+  &__tabs {
+    width: 380px;
+    height: 40px;
+
+    &_btn {
+      width: 120px;
+      height: 40px;
+
+      font-family: 'IBM Plex Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      border-radius: 10px;
+
+      &:hover {
+        background: #EF5B63;
+        color: #FFFFFF;
+        transition: all 0.5s ease;
+      }
+    }
+
+    &_active {
+      background: #EF5B63;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.onLine {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &__block {
+    width: 330px;
+    height: 250px;
+    border-radius: 5px;
+    background-color: #232F3C;
+    background-image: url('../img/courses/Group_1.png');
+
+    &:hover {
+      transition: all 0.5s ease;
+      background-color: #55CBDC;
+    }
+
+    &_active {
+      background-color: #55CBDC;
+    }
+  }
+
+  &__text {
+    padding-left: 10px;
+
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+    &:first-child {
+      padding-top: 10px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 280px;
+    height: 157.5px;
+    opacity: 0.1;
+    background-color: #55CBDC;
+
+    z-index: 1;
+    margin: 0 auto;
+  }
+
+  &__title {
+    padding-left: 10px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
