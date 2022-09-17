@@ -7,7 +7,7 @@
     display: flex;
     flex: 1 1 auto;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
   // .section-home__course
@@ -124,7 +124,7 @@
 .video {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   position: fixed;
   top: 0%;
@@ -146,4 +146,9 @@
 .close-video {
   position: absolute;
 }
+
+.video__top {
+  margin-bottom: 100px;
+}
+
 

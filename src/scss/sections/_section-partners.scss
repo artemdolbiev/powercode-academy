@@ -1,0 +1,23 @@
+
+
+.partners__item {
+	position: relative;
+	padding: 80px 0;
+	margin: 40px;
+}
+
+.parners__item-names {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.promo {
+	display: flex;
+	vertical-align: middle;
+}
+
+.promo img {
+	margin-right: 40px;
+}
