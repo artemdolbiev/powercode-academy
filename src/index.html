@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html', {
-    "title":"Powercode Academy"
-  })
+@@include('html/head.html', {
+"title":"Powercode Academy"
+})
+
 <body>
   @@include('html/header.html', {})
   <main>
@@ -11,13 +12,16 @@
     @@include('html/section-courses.html', {})
     @@include('html/section-offer.html', {})
     @@include('html/section-price.html', {})
-    @@include('html/section-5.html', {})
+    @@include('html/about.html', {})
     @@include('html/section-gallery.html', {})
     @@include('html/section-partners.html', {})
     @@include('html/section-contacts.html', {})
   </main>
   @@include('html/footer.html', {})
 
+  
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="js/app.min.js"></script>
 </body>
+
 </html>

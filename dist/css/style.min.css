@@ -571,6 +571,36 @@ body {
     margin: 10px 0 10px 0;
   }
 }
+.about h2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 76px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #232F3C;
+}
+
+.title p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+  letter-spacing: 1px;
+  color: #232F3C;
+}
+
+p {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 38px;
+  color: #333333;
+}
+
 .gallery {
   width: 100%;
   margin: 40px 0;
@@ -595,6 +625,60 @@ body {
   border-radius: 20px;
 }
 
+.slider {
+  display: none;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .slider {
+    display: block;
+  }
+  .gallery {
+    display: none;
+  }
+  .slick-slider .slider__item img {
+    margin-right: 10px;
+    width: 332px;
+    height: 332px;
+    border-radius: 20px;
+  }
+  .slick-list {
+    overflow: hidden;
+  }
+  .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+  }
+  .slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider .slick-dots li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  .slider .slick-dots button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #39444F;
+    border: 0;
+    border-radius: 50%;
+  }
+  .slider .slick-dots li.slick-active button {
+    background-color: #EF5B63;
+  }
+  .slider__item {
+    text-align: center;
+  }
+}
 @media (min-width: 1366px) {
   .gallery__item-big {
     grid-column: span 2;
@@ -629,6 +713,7 @@ body {
 .partners__item {
   position: relative;
   padding: 80px 0;
+  margin: 40px;
 }
 
 .parners__item-names {
@@ -638,9 +723,15 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.contacts {
-  background-image: url("img/map.jpg");
+.promo {
+  display: flex;
+  vertical-align: middle;
 }
+
+.promo img {
+  margin-right: 40px;
+}
+
 .contacts__card {
   background-color: #232F3C;
   box-sizing: border-box;

@@ -22,18 +22,10 @@
 	border-radius: 20px;
 }
 
-.slider {
-	display: none;
-}
 
-.slider .slick-dots li {
-	list-style: none;
-}
+
 
 @media (max-width: 768px) {
-	.slider {
-		display: block;
-	}
 	.gallery {
 		display: none;
 	}
