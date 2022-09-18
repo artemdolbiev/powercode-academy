@@ -1,13 +1,32 @@
 .section-home {
   margin-bottom: 60px;
 
+  @include md {
+    background-image: url('../img/home-bg-min.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   // .section-home__container
 
   &__container {
-    display: flex;
+
+    @include md-min {
+      display: flex;
     flex: 1 1 auto;
     justify-content: space-between;
     align-items: center;
+    }
+
+  }
+
+  &__info {
+    @include md {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
   }
 
   // .section-home__course
@@ -15,9 +34,26 @@
   &__course {
     font-family: 'IBM Plex Mono', sans-serif;
     font-weight: 400;
-    font-size: 26px;
-    line-height: 48px;
+    
     color: #333333;
+    @include xl-min {
+      font-size: 26px;
+    line-height: 48px;
+    }
+
+    @include xl-lg {
+      font-size: 22px;
+    line-height: 40px;
+    }
+    @include lg-md {
+      font-size: 18px;
+    line-height: 40px;
+    }
+    @include md {
+      font-size: 16px;
+      line-height: 28px;
+      padding-top: 56px;
+    }
   }
 
   // .section-home__title
@@ -25,11 +61,45 @@
   &__title {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    font-size: 80px;
-    line-height: 96px;
-    letter-spacing: 5px;
+    
     text-transform: uppercase;
     margin-bottom: 40px;
+
+    @media (max-height: 670px) {
+      font-size: 70px;
+      line-height: 86px;
+    }
+
+    @include ul-min {
+      font-size: 80px;
+      line-height: 96px;
+      letter-spacing: 5px;
+      margin-bottom: 40px;
+    }
+    @include ul-xl {
+      font-size: 70px;
+      line-height: 86px;
+      letter-spacing: 5px;
+      margin-bottom: 40px;
+    }
+    @include xl-lg {
+      font-size: 60px;
+      line-height: 76px;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+    }
+    @include lg-md {
+      font-size: 60px;
+      line-height: 76px;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+    }
+    @include md-sm {
+      font-size: 50px;
+      line-height: 66px;
+      letter-spacing: 3px;
+      margin-bottom: 30px;
+    }
 
   }
 
@@ -37,6 +107,11 @@
 
   &__buttons {
     display: flex;
+
+    @include md {
+      flex-direction: column;
+    }
+
   }
 
   // .section-home__button
@@ -47,6 +122,10 @@
     background-color: #ef5b63;
     border-radius: 10px;
     margin-right: 30px;
+
+    @include md {
+      margin-bottom: 40px;
+    }
   }
 
   // .section-home__link
@@ -69,18 +148,47 @@
   // .section-home__video
 
   &__video {
+    @include md {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
   }
 
   // .section-home__bg
 
   &__bg {
+
+    @include md {
+      display: none;
+    }
   }
 
   // .section-home__img
 
   &__img {
-    width: 699px;
-    height: 587px;
+    @media (max-height: 670px) {
+      width: 520px;
+      height: 410px;
+    }
+
+    @include ul-min {
+      width: 699px;
+      height: 587px;
+    }
+
+    @include ul-xl{
+      width: 599px;
+      height: 487px;
+    }
+    @include xl-lg{
+      width: 470px;
+      height: 377px;
+    }
+    @include lg{
+      width: 440px;
+      height: 337px;
+    }
   }
 }
 .popup-link {
@@ -93,11 +201,17 @@
     margin-top: 6px;
     display: flex;
     align-items: center;
+    @include md {
+      flex-direction: column-reverse;
+    }
   }
 
   // .home-video__img
 
   &__img {
+    @include md {
+      margin-bottom: 10px;
+    }
   }
 
   &__text {
@@ -107,7 +221,14 @@
     line-height: 18px;
     text-align: center;
     text-transform: uppercase;
-    margin-right: 20px;
+
+    @include md-min {
+      margin-right: 20px;
+    }
+
+    @include md {
+      margin-right: 0px;
+    }
   }
 }
 

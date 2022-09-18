@@ -59,8 +59,15 @@ let rootElement = document.documentElement;
   }
   scrollToTopBtn.addEventListener("click", scrollToTop);
 
-  // carusel
-  import './libs/slick.min.js';
+
+ // ---jQuery
+  import './jQuery.min.js';
+
+//  ----------slider
+  import './slick.min.js';
+// ----------slider
+
+import './libs/carousel.js';
 
 
   $(document).ready(function(){

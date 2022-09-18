@@ -1,9 +1,11 @@
 .blocks{
+    margin-top: 120px;
   &_header{
       text-transform: uppercase;
       font-size: 64px;
   }
   &_main{
+      margin-top: 50px;
       display: flex;
       font-family: 'Rubik', sans-serif;
       .block{
@@ -33,6 +35,7 @@
               display: flex;
               flex-direction: column;
               align-content: space-between;
+
               padding: 20px 0 0 20px;
               .head_junior{
                   color: #4FCC97;
@@ -56,7 +59,12 @@
               font-size: 20px;
           }
           &_text-bottom{
-              font-family: 'IBM Plex Mono', monospace;
+              font-family: 'IBM Plex Mono', sans-serif;
+              padding-top: 166px;
+
+              @include sm {
+                padding-top: 66px;
+              }
               &_sup{
                   font-size: 20px;
                   display: block;

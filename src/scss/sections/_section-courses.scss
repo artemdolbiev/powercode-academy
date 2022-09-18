@@ -1,6 +1,10 @@
 .section-courses {
 }
 
+.courses__tabs_btn.active {
+  background-color: #EF5B63;
+}
+
 .courses {
 
   &__title {
@@ -57,6 +61,7 @@
       text-transform: uppercase;
       border-radius: 10px;
       border: 1px solid #000;
+      cursor: pointer;
 
       &:hover {
         background: #EF5B63;
@@ -78,7 +83,7 @@
   margin-top: 30px;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 10px;
 
@@ -158,6 +163,7 @@
     color: #FFFFFF;
   }
 }
+
 
 @media (max-width: 1440px) {
   .onLine {

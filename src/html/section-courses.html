@@ -3,78 +3,215 @@
         <h2 class="courses__title">наші курси</h2>
         <div class="courses__block">
             <p class="courses__text"><span>ON-line</span> навчання</p>
-            <div class="courses_tabs" id="courses_tabs">
-                <a href="#" class="courses__tabs_btn courses__tabs_active">Online</a>
-                <a href="#" class="courses__tabs_btn">Київ</a>
-                <a href="#" class="courses__tabs_btn">Запоріжжя</a>
+
+            <div class="tab courses_tabs">
+                <a class="courses__tabs_btn"
+                   onclick="openCity(event, 'online')">Online</a>
+                <a class="courses__tabs_btn" onclick="openCity(event, 'kyiv')">Київ</a>
+                <a class="courses__tabs_btn" onclick="openCity(event, 'zaporozhye')">Запоріжжя</a>
             </div>
         </div>
 
-        <div class="onLine" id="online_tabs">
-            <a class="onLine__block block1" href="#">
-                <div>
-                    <p class="onLine__text">31.01. | 12 уроків</p>
-                    <p class="onLine__text">усього місць : 18</p>
-                </div>
-                <p class="onLine__title">{FRONT-END}</p>
-            </a>
+        <div id="online" class="tabcontent">
+            <div class="onLine" id="online_tabs">
+                <a class="onLine__block block1" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{FRONT-END}</p>
+                </a>
 
-            <a class="onLine__block block2 onLine__block_active" href="#">
-                <div>
-                    <p class="onLine__text">31.01. | 12 уроків</p>
-                    <p class="onLine__text">усього місць : 18</p>
-                </div>
-                <p class="onLine__title">{IT Project Management}</p>
-            </a>
+                <a class="onLine__block block2" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{IT Project Management}</p>
+                </a>
 
-            <a class="onLine__block block3" href="#">
-                <div>
-                    <p class="onLine__text">31.01. | 12 уроків</p>
-                    <p class="onLine__text">усього місць : 18</p>
-                </div>
-                <p class="onLine__title">{UX/UI <br>WEB-DESIGN}</p>
-            </a>
+                <a class="onLine__block block3" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{UX/UI <br>WEB-DESIGN}</p>
+                </a>
 
-            <a class="onLine__block block4" href="#">
-                <div>
-                    <p class="onLine__text">31.01. | 12 уроків</p>
-                    <p class="onLine__text">усього місць : 18</p>
-                </div>
-                <p class="onLine__title">{FRONT-END ADVANCED}</p>
-            </a>
+                <a class="onLine__block block4" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{FRONT-END ADVANCED}</p>
+                </a>
 
-            <a class="onLine__block block1" href="#">
-                <div>
-                    <p class="onLine__text">31.01. | 12 уроків</p>
-                    <p class="onLine__text">усього місць : 18</p>
-                </div>
-                <p class="onLine__title">{FRONT-END}</p>
-            </a>
+                <a class="onLine__block block1" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{FRONT-END}</p>
+                </a>
 
-            <a class="onLine__block block2" href="#">
-                <div>
-                    <p class="onLine__text">31.01. | 12 уроків</p>
-                    <p class="onLine__text">усього місць : 18</p>
-                </div>
-                <p class="onLine__title">{IT Project Management}</p>
-            </a>
+                <a class="onLine__block block2" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{IT Project Management}</p>
+                </a>
 
-            <a class="onLine__block block3" href="#">
-                <div>
-                    <p class="onLine__text">31.01. | 12 уроків</p>
-                    <p class="onLine__text">усього місць : 18</p>
-                </div>
-                <p class="onLine__title">{UX/UI <br>WEB-DESIGN}</p>
-            </a>
+                <a class="onLine__block block3" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{UX/UI <br>WEB-DESIGN}</p>
+                </a>
 
-            <a class="onLine__block block4" href="#">
-                <div>
-                    <p class="onLine__text">31.01. | 12 уроків</p>
-                    <p class="onLine__text">усього місць : 18</p>
-                </div>
-                <p class="onLine__title">{FRONT-END ADVANCED}</p>
-            </a>
+                <a class="onLine__block block4" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{FRONT-END ADVANCED}</p>
+                </a>
+            </div>
+        </div>
+
+        <div id="kyiv" class="tabcontent">
+            <div class="onLine" id="kyiv_tabs">
+                <a class="onLine__block block1" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{FRONT-END}</p>
+                </a>
+
+                <a class="onLine__block block2" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{IT Project Management}</p>
+                </a>
+
+                <a class="onLine__block block3" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{UX/UI <br>WEB-DESIGN}</p>
+                </a>
+
+                <a class="onLine__block block4" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{FRONT-END ADVANCED}</p>
+                </a>
+
+                <a class="onLine__block block1" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{FRONT-END}</p>
+                </a>
+
+                <a class="onLine__block block2" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{IT Project Management}</p>
+                </a>
+            </div>
+        </div>
+
+
+        <div id="zaporozhye" class="tabcontent">
+            <div class="onLine" id="zaporozhye_tabs">
+                <a class="onLine__block block1" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{FRONT-END}</p>
+                </a>
+
+                <a class="onLine__block" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{IT Project Management}</p>
+                </a>
+
+                <a class="onLine__block block3" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{UX/UI <br>WEB-DESIGN}</p>
+                </a>
+
+                <a class="onLine__block block4" href="#">
+                    <div>
+                        <p class="onLine__text">31.01. | 12 уроків</p>
+                        <p class="onLine__text">усього місць : 18</p>
+                    </div>
+                    <p class="onLine__title">{FRONT-END ADVANCED}</p>
+                </a>
+            </div>
         </div>
     </div>
 
 </section>
+
+<script>
+    /*let coursesTabs = document.getElementById("courses_tabs");
+    let ctns = coursesTabs.getElementsByClassName("courses__tabs_btn");
+    for (let i = 0; i < ctns.length; i++) {
+        ctns[i].addEventListener("click", function () {
+            let current = document.getElementsByClassName("courses__tabs_active");
+            if (current.length > 0) {
+                current[0].className = current[0].className.replace(" courses__tabs_active", "");
+            }
+            this.className += " courses__tabs_active";
+        });
+    }
+
+    let onlineBlock = document.getElementById("online_tabs");
+    let obtn = onlineBlock.getElementsByClassName("onLine__block");
+    for (let i = 0; i < obtn.length; i++) {
+        obtn[i].addEventListener("click", function () {
+            let current = document.getElementsByClassName("onLine__block_active");
+            if (current.length > 0) {
+                current[0].className = current[0].className.replace(" onLine__block_active", "");
+            }
+            this.className += " onLine__block_active";
+        });
+    }*/
+
+
+    function openCity(evt, cityName) {
+        let i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("courses__tabs_btn");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>

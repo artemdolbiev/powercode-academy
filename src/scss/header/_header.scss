@@ -1,7 +1,14 @@
 .header {
   height: 56px;
   margin-top: 22px;
-  margin-bottom: 52px;
+  
+
+  @include md-min {
+    margin-bottom: 52px;
+  }
+  @include md {
+    margin-bottom: 0;
+  }
 
   &__container {
   }
@@ -26,6 +33,14 @@
   // .header__img
 
   &__img {
+    @include sm {
+      display: none;
+    }
+  }
+  &__img2 {
+    @include sm-min {
+      display: none;
+    }
   }
 
   // .header__social
@@ -33,7 +48,18 @@
   &__social {
     position: relative;
     z-index: 10;
-    margin-left: 60px;
+    
+
+    @include lg-min {
+      margin-left: 60px;
+    }
+    @include lg-md {
+      margin-left: 0;
+    }
+    @include md {
+      display: none;
+    }
+
   }
 
   // .header__link
@@ -58,6 +84,8 @@
     height: 34px;
     width: 138px;
     margin-right: 31px;
+
+    
   }
 
   // .header__item-phone
@@ -81,6 +109,8 @@
 }
 .header-reg {
 
+  
+
   // .header-reg__button
 
   &__button {
@@ -89,6 +119,9 @@
     background-color: #EF5B63;
     border-radius: 10px;
     margin-right: 20px;
+    @include lg {
+      display: none;
+    }
   }
 
   // .header-reg__link
@@ -217,7 +250,14 @@
   align-items: right;
 }
 .menu-open .header__social {
-  margin-right: 162px;
+  
+
+  @include lg-min {
+    margin-right: 162px;
+  }
+  @include lg {
+    margin-right: 0px;
+  }
 }
 
 .header-navbar {
@@ -237,10 +277,17 @@
     margin: 0 auto;
     gap: 36px;
     background-color: $color-white;
+
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     transition: 0.5s;
     z-index: 6;
+
+    @include md {
+      background-image: url('../img/bg-green-min.png');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
     @media (max-height: 670px) {
       font-size: 24px;
@@ -268,15 +315,18 @@
       height: 80%;
     }
     @include lg{
-      font-size: 22px;
-      line-height: 20px;
-      letter-spacing: 2px;
-      height: 80%;
+      font-size: 20px;
+      line-height: 18px;
+      letter-spacing: 1.6px;
+      height: 70%;
     }
   }
 
 
   &__item {
+    @include md {
+      margin-left: 20px;
+    }
   }
 
 
@@ -314,14 +364,30 @@
       height: 417px;
     }
     @include lg{
-      width: 480px;
-      height: 377px;
+      width: 440px;
+      height: 337px;
     }
   }
 }
 
-@media (max-height: 670px) {
-
+.header__image {
+  @include md-min {
+    display: none;
+  }
 }
+
+.item-img {
+  @include md {
+    display: none;
+  }
+}
+
+.header__social2 {
+  @include md-min {
+    display: none;
+  }
+}
+
+
 
 
