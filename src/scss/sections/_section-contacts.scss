@@ -157,6 +157,16 @@
 		text-transform: uppercase;
 		padding: 26px 110px 16px 36px;
 
+		&::after {
+			content: '';
+			position: absolute;
+			background-image: url('../img/question.svg');
+			width: 73px;
+			height: 73px;
+			top: 47px;
+			right: 47px;
+		}
+
 		span {
 			font-weight: 700;
 		}

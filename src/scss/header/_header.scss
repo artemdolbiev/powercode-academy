@@ -235,16 +235,44 @@
     right: 0%;
     width: 100%;
     margin: 0 auto;
-    height: 100%;
     gap: 36px;
     background-color: $color-white;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
-    font-size: 44px;
-    line-height: 53px;
-    letter-spacing: 4px;
     transition: 0.5s;
     z-index: 6;
+
+    @media (max-height: 670px) {
+      font-size: 24px;
+      line-height: 22px;
+      letter-spacing: 4px;
+      align-content: center;
+    }
+
+    @include ul-min {
+      font-size: 44px;
+      line-height: 53px;
+      letter-spacing: 4px;
+      height: 100%;
+    }
+    @include ul-xl{
+      font-size: 34px;
+      line-height: 33px;
+      letter-spacing: 3px;
+      height: 100%;
+    }
+    @include xl-lg{
+      font-size: 28px;
+      line-height: 24px;
+      letter-spacing: 2.5px;
+      height: 80%;
+    }
+    @include lg{
+      font-size: 22px;
+      line-height: 20px;
+      letter-spacing: 2px;
+      height: 80%;
+    }
   }
 
 
@@ -266,10 +294,34 @@
   // .header-navbar__img
 
   &__img {
-    width: 699px;
-    height: 587px;
     margin: 0 auto;
+
+    @media (max-height: 670px) {
+      width: 520px;
+      height: 410px;
+    }
+
+    @include ul-min {
+      width: 699px;
+      height: 587px;
+    }
+    @include ul-xl{
+      width: 599px;
+      height: 487px;
+    }
+    @include xl-lg{
+      width: 520px;
+      height: 417px;
+    }
+    @include lg{
+      width: 480px;
+      height: 377px;
+    }
   }
+}
+
+@media (max-height: 670px) {
+
 }
 
 

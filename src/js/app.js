@@ -1,12 +1,13 @@
 
 // Hamburger menu
+'use strict';
 
 import {menuInit, menuOpen, menuClose} from './libs/hamburger.js';
 
 menuInit();
 
 // Popup
-'use strict';
+
 const popup = (popup, overlayHidden, closePopup, popupLink) => {
   const popupWindow = document.querySelector(popup);
   const overlay = document.querySelector(overlayHidden);
@@ -42,7 +43,9 @@ const popup = (popup, overlayHidden, closePopup, popupLink) => {
 
 popup('.popup', '.overlay', '.close-popup', '.popup-link');
 popup('.popup2', '.overlay', '.close-popup2', '.popup-link2');
+popup('.popup2', '.overlay', '.close-popup2', '.contacs-link');
 popup('.video', '.video-overlay', '.close-video', '.video-link');
+
 
 // ScrollTop
 let scrollToTopBtn = document.getElementById("scrollToTopBtn");
@@ -56,30 +59,19 @@ let rootElement = document.documentElement;
   }
   scrollToTopBtn.addEventListener("click", scrollToTop);
 
+  // carusel
+  import './libs/slick.min.js';
 
-  // Вкладки
 
-const tabs = document.querySelectorAll('.contacts__tab');
-const tabContainer = document.querySelector('.contacts__tab-container');
-const tabContents = document.querySelectorAll('.contacts__content');
-
-tabContainer.addEventListener('click', function (e) {
-  const clickedButton = e.target.closest('.contacts__tab');
-  if (!clickedButton) return;
-
-  // Активная вкладка
-  tabs.forEach(tab => tab.classList.remove('contacts__tab--active'));
-  clickedButton.classList.add('contacts__tab--active');
-
-  // Активный контент
-  tabContents.forEach(content =>
-    content.classList.remove('contacts__content--active')
-  );
-  document
-    .querySelector(`.contacts__content--${clickedButton.dataset.tab}`)
-    .classList.add('contacts__content--active');
-});
-
+  $(document).ready(function(){
+    $('.slider').slick({
+      arrows:false,
+      dots:true,
+      autoplay:true,
+      autoplaySpeed:1500,
+      centerMode:true,
+    });
+  });
 
 
 
