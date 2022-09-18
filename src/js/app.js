@@ -70,16 +70,3 @@ let rootElement = document.documentElement;
 import './libs/carousel.js';
 
 
-  $(document).ready(function(){
-    $('.slider').slick({
-      arrows:false,
-      dots:true,
-      autoplay:true,
-      autoplaySpeed:1500,
-      centerMode:true,
-    });
-  });
-
-
-
-
